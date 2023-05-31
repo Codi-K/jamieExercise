@@ -29,7 +29,7 @@ let table1 = [
     
 ];
 
-let result = document?.querySelector("#products");
+let result = document.querySelector("#products");
 table1.forEach((data)=>{
     result.innerHTML +=`
      <tr>
@@ -41,5 +41,3 @@ table1.forEach((data)=>{
      </tr>
     `
 })
-
-
