@@ -1,4 +1,4 @@
-let result = document.querySelector(".table");
+
 
 
 let table1 = [
@@ -25,51 +25,21 @@ let table1 = [
         name: "Gran-Turismo 7",
         price: "R999",
         image:"https://i.postimg.cc/L86CRDhc/gran-turismo-7-ps4-box-front.webp"
-    },
+    }
     
 ];
 
-table1.forEach(data =>{
-    result.innerHTML = `
-    <table>
-            <thead class="header">
-                <th>Name</th>
-                <th>Price</th>
-                <th>Product</th>
-                <th>Add section</th>
-                <th>Delete section</th>
-            </thead>
-            <tbody class="table">
-                <td>${table1[0].name}</td>
-                <td>${table1[0].price}</td>
-                <td><img src="${table1[0].image}" loading="lazy" alt="${table1[0].name}"></td>
-                <td><button> Add</button></td>
-                <td><button> Delete</button></td>
-            </tbody>
-            <tbody class="table2">
-                <td>${table1[1].name}</td>
-                <td>${table1[1].price}</td>
-                <td><img src="${table1[1].image}" loading="lazy" alt="${table1[1].name}"></td>
-                <td><button> Add</button></td>
-                <td><button> Delete</button></td>
-            </tbody>
-            <tbody class="table3">
-                <td>${table1[2].name}</td>
-                <td>${table1[2].price}</td>
-                <td><img src="${table1[2].image}" loading="lazy" alt="${table1[2].name}"></td>
-                <td><button> Add</button></td>
-                <td><button> Delete</button></td>
-            </tbody>
-            <tbody class="table4">
-                <td>${table1[3].name}</td>
-                <td>${table1[3].price}</td>
-                <td><img src="${table1[3].image}" loading="lazy" alt="${table1[3].name}"></td>
-                <td><button> Add</button></td>
-                <td><button> Delete</button></td>
-            </tbody>
-    </table>
+let result = document?.querySelector("#products");
+table1.forEach((data)=>{
+    result.innerHTML +=`
+     <tr>
+        <td>${data.name}</td>
+        <td>${data.price}</td>
+        <td><img src="${data.image}" loading="lazy" alt="${data.name}"></td>
+        <td><button> Add</button></td>
+        <td><button> Delete</button></td>
+     </tr>
     `
 })
-
 
 
