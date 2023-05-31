@@ -1,0 +1,36 @@
+img{
+    width: 13rem;
+    object-fit: contain;
+    aspect-ratio: 3 / 2;
+    margin: 0.5rem;
+    
+}
+
+table{
+    text-align: center;
+    width: 100%;
+}
+
+/* .header{
+    border: 2px solid black;
+}
+
+.table{
+    border: 2px solid black;
+}
+
+.table1{
+    border: 2px solid black;
+}
+
+.table2{
+    border: 2px solid black;
+}
+
+.table3{
+    border: 2px solid black;
+}
+
+.table4{
+    border: 2px solid black;
+} */
